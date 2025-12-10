@@ -17,5 +17,8 @@ dependencies {
 }
 
 test {
-    useTestNG()
+    useTestNG() {
+        // Memberitahu Gradle untuk memakai file xml ini
+        suites 'src/test/resources/testng.xml'
+    }
 }
